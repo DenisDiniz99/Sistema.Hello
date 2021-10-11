@@ -1,4 +1,4 @@
-# Sistema.Hello
+# Sistema Hello
 ### Sistema de atendimento público.
 ### Base de estudos em ASP.Net Core MVC
 ### Base de estudo de negócio: Prefeitura Municipal de Capetinga-MG
