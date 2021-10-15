@@ -29,8 +29,6 @@ namespace Sistema.Hello.Data.Maps
                 .IsRequired();
             builder.Property(c => c.DataNasc)
                 .IsRequired();
-            builder.Property(c => c.DataCad)
-                .IsRequired();
             builder.OwnsOne(s => s.Endereco, endereco =>
             {
                 endereco.Property(e => e.Rua).IsRequired();

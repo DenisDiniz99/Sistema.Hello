@@ -8,7 +8,7 @@ namespace Sistema.Hello.Business.Entities
     {
         public string Nome { get; set; }
         public string Matricula { get; set; }
-        public DateTime DataCad { get; set; }
+        public DateTime DataCad => DateTime.Now.Date;
         public Guid CargoId { get; set; }
         public Cargo Cargo { get; set; }
 

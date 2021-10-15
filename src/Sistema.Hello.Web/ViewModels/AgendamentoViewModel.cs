@@ -30,16 +30,16 @@ namespace Sistema.Hello.Web.ViewModels
         public ProtocoloViewModel Protocolo { get; set; }
 
         [Required(ErrorMessage = "Campo {0} obrigatório")]
-        public Guid CidadaoId { get; set; }
+        public Guid CidadaoViewModelId { get; set; }
 
         [Required(ErrorMessage = "Campo {0} obrigatório")]
-        public Guid AssuntoId { get; set; }
+        public Guid AssuntoViewModelId { get; set; }
 
         [Required(ErrorMessage = "Campo {0} obrigatório")]
-        public Guid SetorId { get; set; }
+        public Guid SetorViewModelId { get; set; }
 
         [Required(ErrorMessage = "Campo {0} obrigatório")]
-        public Guid ColaboradorId { get; set; }
+        public Guid ColaboradorViewModelId { get; set; }
 
         [StringLength(500, ErrorMessage = "O campo {0} deve conter entre {2} e {1} caracteres", MinimumLength = 10)]
         public string Observacao { get; set; }

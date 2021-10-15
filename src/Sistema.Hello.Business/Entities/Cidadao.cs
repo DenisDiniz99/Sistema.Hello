@@ -13,7 +13,7 @@ namespace Sistema.Hello.Business.Entities
         public DateTime DataNasc { get; set; }
         public string TelefoneFixo { get; set; }
         public string Celular { get; set; }
-        public DateTime DataCad { get; set; }
+        public DateTime DataCad => DateTime.Now.Date;
         public Endereco Endereco { get; set; }
 
         public IEnumerable<Agendamento> Agendamentos { get; set; }
