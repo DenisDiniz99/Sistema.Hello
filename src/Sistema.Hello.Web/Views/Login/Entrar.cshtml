@@ -1,0 +1,17 @@
+﻿<div class="card">
+    <div class="card-header">
+        <h3 class="text-center">Login</h3>
+    </div>
+    <div class="card-body">
+        <form method="post">
+            <label for="usuario"></label>
+            <input type="text" class="form-control" id="usuario" placeholder="Informe o usuário" />
+            <label for="senha"></label>
+            <input type="password" class="form-control" id="senha" placeholder="Informe a Senha" />
+            <div class="justify-content-center mt-3">
+                <button class="btn btn-dark btn-login" asp-controller="Usuario" asp-action="login">Confirmar</button>
+                <button class="btn btn-dark btn-login ml-2">Cancelar</button>
+            </div>
+        </form>
+    </div>
+</div>

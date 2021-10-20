@@ -1,7 +1,9 @@
 ﻿/* Please see documentation at https://docs.microsoft.com/aspnet/core/client-side/bundling-and-minification
 for details on configuring this project to bundle and minify static web assets. */
-:root{
+:root {
     --cinza: #c0c0c0;
+    --branco: #fff;
+    --azul: #4a4cf6
 }
 a.navbar-brand {
   white-space: normal;
@@ -38,7 +40,7 @@ html {
 }
 
 .border-top {
-  border-top: 1px solid #e5e5e5;
+  border-top: 1px solid #e5e5e5);
 }
 .border-bottom {
   border-bottom: 1px solid #e5e5e5;
@@ -70,22 +72,25 @@ body {
   width: 100%;
   white-space: nowrap;
   line-height: 60px; /* Vertically center the text there */
-  background-color: var(--cinza);
 }
 
+
+/*Estilização do Header*/
 #header-color {
-    background-color: #C0C0C0;
+    background-color: var(--branco);
 }
 
 #header-logo{
     margin-left: 3px;
 }
 
+/*Container para página Inicial*/
 .flex-container{
     display: flex;
     margin: auto;
-    max-width: 900px;
     width: 100%;
+    height: 100%;
+    max-width: 900px;
     min-width: 300px;
 }
 
@@ -96,28 +101,32 @@ body {
 }
 
 .texto-apresentacao {
+    width: 100%;
     min-height: 200px;
     color: #1C1C1C;
 }
 
-.texto-apresentacao img{
-    display:block;
-    max-width: 400px;
-    max-height: 2500px;
-}
+/*#img-apresentacao{
+    width: 100%;
+    height: 100%;
+    height: 300px;
+    max-width: 500px;
+}*/
 
-.login{
-    flex-wrap: wrap;
-    align-items: center;
-    text-align: center;
-    max-width: 300px;
-}
-
-.btn-login{
+.btn-apresentacao{
     margin: auto;
-    width: 100px;
+    width: 150px;
 }
 
+/*.texto-apresentacao img {
+    display: block;
+    width: 100%;
+    height: 100%;
+    width: 400px;
+    height: 250px;
+}*
+
+/*
 #linha-separacao-login{
     content:"";
     height: 400px;
@@ -126,4 +135,19 @@ body {
     margin-left: 5px;
     background-color: #C0C0C0;
     position: relative;
+}
+*/
+
+
+/*Tela de Login*/
+.login {
+    flex-wrap: wrap;
+    align-items: center;
+    text-align: center;
+    max-width: 300px;
+}
+
+.btn-login {
+    margin: auto;
+    width: 100px;
 }

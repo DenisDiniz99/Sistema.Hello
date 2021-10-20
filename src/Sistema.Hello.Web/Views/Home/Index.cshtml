@@ -4,28 +4,18 @@
 
 <div class="flex-container apresentacao">
     <div class="texto-apresentacao">
-        <h1>
-            Olá, seja bem vindo ;)
-        </h1>
-        <img src="~/img/img1.jpg" alt="Seja bem-vindo" />
-        <a class="btn btn-dark mt-3" href="#">Saiba mais!</a>
+        <div class="display-3">
+            Olá,
+        </div>
+        <div class="display-4">
+            seja bem vindo ;)
+        </div>
+        <div class="justify-content-center mt-3">
+            <a class="btn btn-primary btn-apresentacao" href="#">Login</a>
+            <a class="btn btn-outline-primary btn-apresentacao" href="#">Saiba mais</a>
+        </div>
     </div>
-    <div id="linha-separacao-login"></div>
-    <div class="card">
-        <div class="card-header">
-            <h3 class="text-center">Login</h3>
-        </div>
-        <div class="card-body">
-            <form method="post">
-                <label for="usuario"></label>
-                <input type="text" class="form-control" id="usuario" placeholder="Informe o usuário"/>
-                <label for="senha"></label>
-                <input type="password" class="form-control" id="senha" placeholder="Informe a Senha"/>
-                <div class="justify-content-center mt-3">
-                    <button class="btn btn-dark btn-login" asp-controller="Usuario" asp-action="login">Confirmar</button>
-                    <button class="btn btn-dark btn-login ml-2">Cancelar</button>
-                </div>
-            </form>
-        </div>
+    <div>
+        <img src="~/img/img1.jpg" class="img-fluid" id="img-apresentacao" alt="Seja bem-vindo" />
     </div>
 </div>
